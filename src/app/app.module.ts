@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegComponent } from './user-reg/user-reg.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AdminNavComponent } from './admin-nav/admin-nav.component';
 
 const myRoutes:Routes = [
   {
@@ -22,6 +24,10 @@ const myRoutes:Routes = [
   {
     path:"userReg",
     component:UserRegComponent
+  },
+  {
+    path:"dashboard",
+    component:DashboardComponent
   }
 ]
 
@@ -30,7 +36,9 @@ const myRoutes:Routes = [
     AppComponent,
     AdminLoginComponent,
     UserLoginComponent,
-    UserRegComponent
+    UserRegComponent,
+    DashboardComponent,
+    AdminNavComponent
   ],
   imports: [
     BrowserModule,
